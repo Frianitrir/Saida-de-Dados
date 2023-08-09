@@ -1,0 +1,40 @@
+using System;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+
+        int idade = 23, qtd = 4, num = 30, ano = 2023;
+        double altura = 1.83, prcUn = 5.98, val = 899.30, prec = 9.80;
+        string nome = "Lucas Henrique", produto = "Banana", product = "Maçã", disc = "ATP", modelo = "Onix Hatch", marca = "Chevrolet";
+
+        Console.WriteLine("\n####### DADOS DO USUARIO ##########");
+        Console.WriteLine("##                               ##");
+        Console.WriteLine("## Idade: " + idade + "                     ##");
+        Console.WriteLine("## Altura: " + altura + "                  ##");
+        Console.WriteLine("## Nome: " + nome + "          ##");
+        Console.WriteLine("## Disciplina: " + disc + "               ##");
+        Console.WriteLine("##                               ##");
+        Console.WriteLine("###################################");
+
+
+        Console.WriteLine("\nLucas foi ao mercado e comprou {0} unidades de {1} que custam no Total: R{2:C}.", qtd, produto, qtd * prcUn);
+
+        Console.WriteLine("\n<------    CARRO ATUAL    ------>");
+        Console.Write($"\nModelo: {modelo}, ");
+        Console.Write($"Marca: {marca}, ");
+        Console.Write($"Ano: {ano}.\n");
+        Console.WriteLine("\nNumero De Parcelas: {0:D5}", num);
+        Console.WriteLine("Valor ao Mês: {0:F2}", val);
+        Console.WriteLine("Valor em Reais: R{0:C}", val);
+
+        Console.WriteLine("\n<------------------------------>");
+
+        Console.WriteLine("\n<---    COMPRADO NA FEIRA   --->\n");
+        Console.WriteLine("Produto: {0,-10} | Preço R{1,6}", produto, prcUn);
+        Console.WriteLine("Produto: {0,-10} | Preço R{1,6}", product, prec);
+        Console.WriteLine("\n<------------------------------>");
+
+    }
+}
